@@ -1,61 +1,60 @@
 # Polynomial Roots Solver
 
-## Описание
+## Description
+A C++ program for finding all complex roots of polynomials with complex coefficients. Implements Newton's method with deflation for sequential root finding.
 
-Программа для нахождения всех комплексных корней полинома произвольной степени с комплексными коэффициентами. Реализован метод Ньютона с дефляцией для последовательного нахождения корней.
+## Key Features
 
-## Особенности
+- Support for polynomials with complex coefficients
+- Automatic initial guess generation
+- Convergence control for each root
+- Detailed solution process information
+- Templated implementation for multiple numeric types
 
-- Поддержка полиномов с комплексными коэффициентами
-- Автоматическая генерация начальных приближений
-- Контроль сходимости для каждого корня
-- Подробная информация о процессе решения
-- Шаблонная реализация для работы с разными числовыми типами
+## Requirements
 
-## Требования
+- C++17 compiler (g++ 7+ or clang++ 5+)
+- Standard C++ library
 
-- Компилятор C++17 (g++ 7+ или clang++ 5+)
-- Стандартная библиотека C++
+## Installation & Usage
 
-## Установка и запуск
-
-1. Клонируйте репозиторий или скопируйте файлы:
+1. Clone the repository:
    ```
-   git clone [ваш репозиторий]
+   git clone [your-repository-url]
    cd polynomial-roots-solver
    ```
 
-2. Скомпилируйте программу:
+2. Compile the program:
    ```
    make
    ```
 
-3. Запустите программу:
+3. Run the executable:
    ```
    ./polynomial_roots
    ```
 
-   Или сразу скомпилируйте и запустите:
+   Or compile and run in one command::
    ```
    make run
    ```
 
-## Использование
+## How to Use
 
-1. Введите степень полинома (например, 3 для кубического уравнения)
-2. Введите коэффициенты для каждой степени (действительную и мнимую части через пробел)
-3. Программа выведет найденные корни с информацией о сходимости
+1. Enter polynomial degree (e.g., 3 for cubic equation)
+2. Input coefficients for each term (real and imaginary parts separated by space)
+3. The program will output found roots with convergence information
 
-Пример ввода:
+Example Input:
 ```
-Введите степень многочлена (например, 3): 2
-Введите коэффициенты (действительная и мнимая часть через пробел) от старшей степени к младшей:
-Коэффициент при x^2: 1 0
-Коэффициент при x^1: -5 0
-Коэффициент при x^0: 6 0
+Enter polynomial degree (e.g., 3): 2
+Enter coefficients (real and imaginary parts) from highest to lowest degree:
+Coefficient for x^2: 1 0
+Coefficient for x^1: -5 0
+Coefficient for x^0: 6 0
 ```
 
-Пример вывода:
+Example Output:
 ```
 Roots found:
 Root: (3,0) | Converged: yes | Iterations: 5
@@ -64,9 +63,9 @@ Root: (2,0) | Converged: yes | Iterations: 4
 
 ## Дополнительные команды
 
-- `make debug` - компиляция с отладочной информацией
-- `make clean` - удаление скомпилированных файлов
+- `make debug` - compile with debug information
+- `make clean` - emove compiled files
 
-## Лицензия
+## License
 
 [MIT License](LICENSE)
